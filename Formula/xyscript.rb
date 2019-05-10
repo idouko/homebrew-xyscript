@@ -18,12 +18,13 @@ class Xyscript < Formula
 #                          "--prefix=#{prefix}"
 #    # system "cmake", ".", *std_cmake_args
 #    system "make", "install" # if this fails, try separate make/make install steps
-    etc.install Dir["src/*"]
-    mkdir "build" do
-        system "cmake", "..", *std_cmake_args
-        system "make"
-        system "make", "install" # if this fails, try separate make/make install steps
-    end
+#    etc.install Dir["src/*"]
+#    mkdir "build" do
+#        system "cmake", "..", *std_cmake_args
+#        system "make"
+#        system "make", "install" # if this fails, try separate make/make install steps
+#    end
+    bin.install "xyscript"
   end
 
   test do
