@@ -2,12 +2,11 @@
 #                https://rubydoc.brew.sh/Formula
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 class Xyscript < Formula
-  desc "script for xycoder"
-  homepage "https://www.test.com"
-  url "https://github.com/littertwo/homebrew-xyscript/blob/master/dist/xyscript-0.1.6.5.tar.gz"
-  version "0.1.6.5"
-  sha256 "5b527750f176b940009bad6d820b4f4e36abbbc0211de1ca89eda7a7ec32366a"
-   depends_on "cmake" => :build
+  desc ""
+  homepage ""
+  url "https://github.com/littertwo/homebrew-xyscript/blob/master/dist/xyscript_0.1.7.12.tar.gz"
+  sha256 "70d1d0e2806084368cd0a952419aa67d7292d39c20350c82a8e18ca4186b9f55"
+  # depends_on "cmake" => :build
 
   def install
     # ENV.deparallelize  # if your formula fails when building in parallel
@@ -18,12 +17,6 @@ class Xyscript < Formula
 #                          "--prefix=#{prefix}"
 #    # system "cmake", ".", *std_cmake_args
 #    system "make", "install" # if this fails, try separate make/make install steps
-#    etc.install Dir["src/*"]
-#    mkdir "build" do
-#        system "cmake", "..", *std_cmake_args
-#        system "make"
-#        system "make", "install" # if this fails, try separate make/make install steps
-#    end
     bin.install "xyscript"
   end
 
